@@ -5,13 +5,13 @@
 Summary:	TPM (Trusted Platform Module) 2.0 tools based on tpm2-tss
 Summary(pl.UTF-8):	Narzędzia TPM (Trusted Platform Module) 2.0 oparte o tpm2-tss
 Name:		tpm2-tools
-Version:	5.2
+Version:	5.5
 Release:	1
 License:	BSD
 Group:		Applications/System
 #Source0Download: https://github.com/tpm2-software/tpm2-tools/releases
 Source0:	https://github.com/tpm2-software/tpm2-tools/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	0057615ef43b9322d4577fc3bde0e8d6
+# Source0-md5:	10c0bd5be82c316598969745f178f04b
 URL:		https://github.com/tpm2-software/tpm2-tools
 BuildRequires:	curl-devel
 BuildRequires:	efivar-devel
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/{AUTHORS.md,CHANGELOG.md,LICENSE,MAINTAINERS.md,README.md}
+%doc docs/{AUTHORS.md,CHANGELOG.md,LICENSE,MAINTAINERS.md,README.md}
 %attr(755,root,root) %{_bindir}/tpm2
 %attr(755,root,root) %{_bindir}/tpm2_*
 %attr(755,root,root) %{_bindir}/tss2
